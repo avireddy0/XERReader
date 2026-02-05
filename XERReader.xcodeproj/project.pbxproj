@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000010000000000000001 /* XERReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000001 /* XERReaderApp.swift */; };
+		A10000010000000000000002 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000002 /* Schedule.swift */; };
+		A10000010000000000000003 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000003 /* Task.swift */; };
+		A10000010000000000000004 /* Relationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000004 /* Relationship.swift */; };
+		A10000010000000000000005 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000005 /* Resource.swift */; };
+		A10000010000000000000006 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000006 /* Calendar.swift */; };
+		A10000010000000000000007 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000007 /* ChatMessage.swift */; };
+		A10000010000000000000008 /* XERDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000008 /* XERDocument.swift */; };
+		A10000010000000000000009 /* XERParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000009 /* XERParser.swift */; };
+		A10000010000000000000010 /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000010 /* ScheduleViewModel.swift */; };
+		A10000010000000000000011 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000011 /* ChatViewModel.swift */; };
+		A10000010000000000000012 /* ClaudeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000012 /* ClaudeService.swift */; };
+		A10000010000000000000013 /* AnalysisTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000013 /* AnalysisTools.swift */; };
+		A10000010000000000000014 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000014 /* KeychainService.swift */; };
+		A10000010000000000000015 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000015 /* ContentView.swift */; };
+		A10000010000000000000016 /* ScheduleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000016 /* ScheduleTableView.swift */; };
+		A10000010000000000000017 /* ChatInterfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000017 /* ChatInterfaceView.swift */; };
+		A10000010000000000000018 /* AnalysisReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000018 /* AnalysisReportView.swift */; };
+		A10000010000000000000019 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000019 /* SettingsView.swift */; };
+		A10000010000000000000020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000020 /* Assets.xcassets */; };
+		A10000010000000000000021 /* ActivityCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000023 /* ActivityCode.swift */; };
+		A10000010000000000000022 /* GanttChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000024 /* GanttChartView.swift */; };
+		A10000010000000000000023 /* MPPParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000025 /* MPPParser.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A20000010000000000000000 /* XERReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XERReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000010000000000000001 /* XERReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XERReaderApp.swift; sourceTree = "<group>"; };
+		A20000010000000000000002 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		A20000010000000000000003 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		A20000010000000000000004 /* Relationship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relationship.swift; sourceTree = "<group>"; };
+		A20000010000000000000005 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		A20000010000000000000006 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		A20000010000000000000007 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		A20000010000000000000008 /* XERDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XERDocument.swift; sourceTree = "<group>"; };
+		A20000010000000000000009 /* XERParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XERParser.swift; sourceTree = "<group>"; };
+		A20000010000000000000010 /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
+		A20000010000000000000011 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		A20000010000000000000012 /* ClaudeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeService.swift; sourceTree = "<group>"; };
+		A20000010000000000000013 /* AnalysisTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisTools.swift; sourceTree = "<group>"; };
+		A20000010000000000000014 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		A20000010000000000000015 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A20000010000000000000016 /* ScheduleTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableView.swift; sourceTree = "<group>"; };
+		A20000010000000000000017 /* ChatInterfaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInterfaceView.swift; sourceTree = "<group>"; };
+		A20000010000000000000018 /* AnalysisReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisReportView.swift; sourceTree = "<group>"; };
+		A20000010000000000000019 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A20000010000000000000020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A20000010000000000000021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000010000000000000022 /* XERReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XERReader.entitlements; sourceTree = "<group>"; };
+		A20000010000000000000023 /* ActivityCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCode.swift; sourceTree = "<group>"; };
+		A20000010000000000000024 /* GanttChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GanttChartView.swift; sourceTree = "<group>"; };
+		A20000010000000000000025 /* MPPParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPPParser.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30000010000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A40000010000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A40000010000000000000002 /* XERReader */,
+				A40000010000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A40000010000000000000002 /* XERReader */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000001 /* XERReaderApp.swift */,
+				A40000010000000000000004 /* Models */,
+				A40000010000000000000005 /* ViewModels */,
+				A40000010000000000000006 /* Views */,
+				A40000010000000000000007 /* Services */,
+				A40000010000000000000008 /* Resources */,
+				A20000010000000000000021 /* Info.plist */,
+				A20000010000000000000022 /* XERReader.entitlements */,
+			);
+			path = XERReader;
+			sourceTree = "<group>";
+		};
+		A40000010000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000000 /* XERReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A40000010000000000000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000002 /* Schedule.swift */,
+				A20000010000000000000003 /* Task.swift */,
+				A20000010000000000000004 /* Relationship.swift */,
+				A20000010000000000000005 /* Resource.swift */,
+				A20000010000000000000006 /* Calendar.swift */,
+				A20000010000000000000007 /* ChatMessage.swift */,
+				A20000010000000000000008 /* XERDocument.swift */,
+				A20000010000000000000009 /* XERParser.swift */,
+				A20000010000000000000023 /* ActivityCode.swift */,
+				A20000010000000000000025 /* MPPParser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A40000010000000000000005 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000010 /* ScheduleViewModel.swift */,
+				A20000010000000000000011 /* ChatViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A40000010000000000000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000015 /* ContentView.swift */,
+				A20000010000000000000016 /* ScheduleTableView.swift */,
+				A20000010000000000000017 /* ChatInterfaceView.swift */,
+				A20000010000000000000018 /* AnalysisReportView.swift */,
+				A20000010000000000000019 /* SettingsView.swift */,
+				A20000010000000000000024 /* GanttChartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A40000010000000000000007 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000012 /* ClaudeService.swift */,
+				A20000010000000000000013 /* AnalysisTools.swift */,
+				A20000010000000000000014 /* KeychainService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A40000010000000000000008 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000020 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50000010000000000000001 /* XERReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70000010000000000000001 /* Build configuration list for PBXNativeTarget "XERReader" */;
+			buildPhases = (
+				A60000010000000000000001 /* Sources */,
+				A30000010000000000000001 /* Frameworks */,
+				A60000010000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XERReader;
+			productName = XERReader;
+			productReference = A20000010000000000000000 /* XERReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A80000010000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A50000010000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A70000010000000000000002 /* Build configuration list for PBXProject "XERReader" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A40000010000000000000001;
+			productRefGroup = A40000010000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A50000010000000000000001 /* XERReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A60000010000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000010000000000000020 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60000010000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000010000000000000001 /* XERReaderApp.swift in Sources */,
+				A10000010000000000000002 /* Schedule.swift in Sources */,
+				A10000010000000000000003 /* Task.swift in Sources */,
+				A10000010000000000000004 /* Relationship.swift in Sources */,
+				A10000010000000000000005 /* Resource.swift in Sources */,
+				A10000010000000000000006 /* Calendar.swift in Sources */,
+				A10000010000000000000007 /* ChatMessage.swift in Sources */,
+				A10000010000000000000008 /* XERDocument.swift in Sources */,
+				A10000010000000000000009 /* XERParser.swift in Sources */,
+				A10000010000000000000010 /* ScheduleViewModel.swift in Sources */,
+				A10000010000000000000011 /* ChatViewModel.swift in Sources */,
+				A10000010000000000000012 /* ClaudeService.swift in Sources */,
+				A10000010000000000000013 /* AnalysisTools.swift in Sources */,
+				A10000010000000000000014 /* KeychainService.swift in Sources */,
+				A10000010000000000000015 /* ContentView.swift in Sources */,
+				A10000010000000000000016 /* ScheduleTableView.swift in Sources */,
+				A10000010000000000000017 /* ChatInterfaceView.swift in Sources */,
+				A10000010000000000000018 /* AnalysisReportView.swift in Sources */,
+				A10000010000000000000019 /* SettingsView.swift in Sources */,
+				A10000010000000000000021 /* ActivityCode.swift in Sources */,
+				A10000010000000000000022 /* GanttChartView.swift in Sources */,
+				A10000010000000000000023 /* MPPParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A90000010000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A90000010000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A90000010000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = XERReader/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "XER Reader";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xerreader.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A90000010000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = XERReader/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "XER Reader";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xerreader.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A70000010000000000000001 /* Build configuration list for PBXNativeTarget "XERReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90000010000000000000003 /* Debug */,
+				A90000010000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70000010000000000000002 /* Build configuration list for PBXProject "XERReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90000010000000000000001 /* Debug */,
+				A90000010000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A80000010000000000000001 /* Project object */;
+}

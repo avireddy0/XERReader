@@ -1,0 +1,22 @@
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+*.xcworkspace
+!*.xcodeproj/project.pbxproj
+xcuserdata/
+
+# macOS
+.DS_Store
+*.swp
+
+# Swift Package Manager
+.build/
+Packages/
+
+# Dependencies
+Pods/
+
+# Secrets
+*.env
+.omc/

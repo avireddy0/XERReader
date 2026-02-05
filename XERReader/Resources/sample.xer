@@ -1,0 +1,94 @@
+ERMHDR	20.12	2024-01-15	Project	admin	admin	dbxDatabaseNoName	Project Management	USD
+%T	CURRTYPE
+%F	curr_id	curr_short_name	curr_symbol	decimal_digit_cnt	curr_type
+%R	1	USD	$	2	CT_Project
+%T	PROJECT
+%F	proj_id	proj_short_name	proj_name	plan_start_date	plan_end_date	last_recalc_date
+%R	1000	SAMPLE	Sample Construction Project	2024-01-15 08:00	2024-12-31 17:00	2024-01-15 08:00
+%T	CALENDAR
+%F	clndr_id	clndr_name	proj_id	default_flag	day_hr_cnt	week_hr_cnt	month_hr_cnt	year_hr_cnt
+%R	1	Standard 5 Day	1000	Y	8	40	172	2080
+%T	PROJWBS
+%F	wbs_id	proj_id	parent_wbs_id	wbs_name	wbs_short_name	seq_num
+%R	100	1000		Sample Construction Project	PROJ	1
+%R	101	1000	100	Design Phase	DESIGN	2
+%R	102	1000	100	Construction Phase	CONST	3
+%R	103	1000	100	Closeout Phase	CLOSE	4
+%T	TASK
+%F	task_id	proj_id	wbs_id	task_code	task_name	task_type	status_code	phys_complete_pct	target_start_date	target_end_date	act_start_date	act_end_date	target_drtn_hr_cnt	remain_drtn_hr_cnt
+%R	1001	1000	101	A1000	Project Kickoff	TT_Mile	TK_Complete	100	2024-01-15 08:00	2024-01-15 08:00	2024-01-15 08:00	2024-01-15 08:00	0	0
+%R	1002	1000	101	A1010	Site Survey	TT_Task	TK_Complete	100	2024-01-16 08:00	2024-01-25 17:00	2024-01-16 08:00	2024-01-25 17:00	80	0
+%R	1003	1000	101	A1020	Geotechnical Investigation	TT_Task	TK_Complete	100	2024-01-22 08:00	2024-02-02 17:00	2024-01-22 08:00	2024-02-02 17:00	80	0
+%R	1004	1000	101	A1030	Architectural Design	TT_Task	TK_Active	75	2024-01-26 08:00	2024-03-15 17:00	2024-01-26 08:00		320	80
+%R	1005	1000	101	A1040	Structural Design	TT_Task	TK_Active	50	2024-02-05 08:00	2024-03-29 17:00	2024-02-05 08:00		360	180
+%R	1006	1000	101	A1050	MEP Design	TT_Task	TK_NotStart	0	2024-02-19 08:00	2024-04-12 17:00			360	360
+%R	1007	1000	101	A1060	Design Review & Approval	TT_Task	TK_NotStart	0	2024-04-15 08:00	2024-04-26 17:00			80	80
+%R	1008	1000	102	A2000	Mobilization	TT_Task	TK_NotStart	0	2024-04-29 08:00	2024-05-10 17:00			80	80
+%R	1009	1000	102	A2010	Site Preparation	TT_Task	TK_NotStart	0	2024-05-13 08:00	2024-05-31 17:00			120	120
+%R	1010	1000	102	A2020	Foundation Work	TT_Task	TK_NotStart	0	2024-06-03 08:00	2024-07-12 17:00			280	280
+%R	1011	1000	102	A2030	Structural Steel	TT_Task	TK_NotStart	0	2024-07-15 08:00	2024-09-06 17:00			360	360
+%R	1012	1000	102	A2040	Building Envelope	TT_Task	TK_NotStart	0	2024-09-09 08:00	2024-10-18 17:00			280	280
+%R	1013	1000	102	A2050	MEP Rough-In	TT_Task	TK_NotStart	0	2024-09-23 08:00	2024-11-01 17:00			280	280
+%R	1014	1000	102	A2060	Interior Finishes	TT_Task	TK_NotStart	0	2024-10-21 08:00	2024-11-29 17:00			280	280
+%R	1015	1000	102	A2070	MEP Finishes	TT_Task	TK_NotStart	0	2024-11-04 08:00	2024-12-06 17:00			240	240
+%R	1016	1000	103	A3000	Punch List	TT_Task	TK_NotStart	0	2024-12-09 08:00	2024-12-20 17:00			80	80
+%R	1017	1000	103	A3010	Final Inspections	TT_Task	TK_NotStart	0	2024-12-16 08:00	2024-12-27 17:00			80	80
+%R	1018	1000	103	A3020	Project Closeout	TT_FinMile	TK_NotStart	0	2024-12-31 17:00	2024-12-31 17:00			0	0
+%T	TASKPRED
+%F	task_id	pred_task_id	pred_type	lag_hr_cnt
+%R	1002	1001	PR_FS	0
+%R	1003	1002	PR_SS	40
+%R	1004	1002	PR_FS	0
+%R	1005	1003	PR_FS	0
+%R	1005	1004	PR_SS	80
+%R	1006	1004	PR_SS	160
+%R	1006	1005	PR_SS	80
+%R	1007	1004	PR_FS	0
+%R	1007	1005	PR_FS	0
+%R	1007	1006	PR_FS	0
+%R	1008	1007	PR_FS	0
+%R	1009	1008	PR_FS	0
+%R	1010	1009	PR_FS	0
+%R	1011	1010	PR_FS	0
+%R	1012	1011	PR_FS	0
+%R	1013	1011	PR_SS	120
+%R	1014	1012	PR_SS	120
+%R	1014	1013	PR_SS	80
+%R	1015	1013	PR_FS	0
+%R	1015	1014	PR_SS	80
+%R	1016	1014	PR_FS	0
+%R	1016	1015	PR_FS	0
+%R	1017	1016	PR_SS	40
+%R	1018	1016	PR_FS	0
+%R	1018	1017	PR_FS	0
+%T	RSRC
+%F	rsrc_id	rsrc_short_name	rsrc_name	rsrc_type	def_qty_per_hr
+%R	1	PM	Project Manager	RT_Labor	1
+%R	2	ARCH	Architect	RT_Labor	1
+%R	3	SE	Structural Engineer	RT_Labor	1
+%R	4	MEP	MEP Engineer	RT_Labor	1
+%R	5	GC	General Contractor	RT_Labor	1
+%R	6	STEEL	Steel Crew	RT_Labor	4
+%R	7	CRANE	Crane	RT_Equip	1
+%T	TASKRSRC
+%F	task_id	rsrc_id	proj_id	target_qty	act_reg_qty	remain_qty	target_cost	act_reg_cost
+%R	1001	1	1000	8	8	0	1200	1200
+%R	1002	1	1000	40	40	0	6000	6000
+%R	1003	3	1000	80	80	0	12000	12000
+%R	1004	2	1000	320	240	80	48000	36000
+%R	1005	3	1000	360	180	180	54000	27000
+%R	1006	4	1000	360	0	360	54000	0
+%R	1007	1	1000	80	0	80	12000	0
+%R	1008	5	1000	160	0	160	20000	0
+%R	1009	5	1000	240	0	240	30000	0
+%R	1010	5	1000	560	0	560	70000	0
+%R	1011	6	1000	1440	0	1440	144000	0
+%R	1011	7	1000	360	0	360	72000	0
+%R	1012	5	1000	560	0	560	70000	0
+%R	1013	4	1000	560	0	560	84000	0
+%R	1014	5	1000	560	0	560	70000	0
+%R	1015	4	1000	480	0	480	72000	0
+%R	1016	5	1000	160	0	160	20000	0
+%R	1017	1	1000	80	0	80	12000	0
+%R	1018	1	1000	8	0	8	1200	0
+%E
