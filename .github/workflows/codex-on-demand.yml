@@ -1,0 +1,76 @@
+name: Codex On-Demand Task
+
+on:
+  workflow_dispatch:
+    inputs:
+      prompt:
+        description: 'What should Codex do? (full task description)'
+        required: true
+        type: string
+      sandbox:
+        description: 'Sandbox mode'
+        required: false
+        default: 'workspace-write'
+        type: choice
+        options:
+          - workspace-write
+          - read-only
+          - danger-full-access
+      create_pr:
+        description: 'Create PR with changes?'
+        required: false
+        default: true
+        type: boolean
+
+jobs:
+  codex-task:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e . 2>/dev/null || pip install -r requirements.txt 2>/dev/null || true
+
+      - name: Run Codex
+        id: codex
+        uses: openai/codex-action@v1
+        with:
+          openai-api-key: ${{ secrets.OPENAI_API_KEY }}
+          sandbox: ${{ github.event.inputs.sandbox }}
+          prompt: ${{ github.event.inputs.prompt }}
+
+      - name: Create PR if requested and changes exist
+        if: github.event.inputs.create_pr == 'true'
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            SLUG=$(echo "${{ github.event.inputs.prompt }}" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g' | cut -c1-40)
+            BRANCH="codex/task-${SLUG}-$(date +%s)"
+            git checkout -b "$BRANCH"
+            git add -A
+            git commit -m "feat: Codex task - ${{ github.event.inputs.prompt }}"
+            git push -u origin "$BRANCH"
+            gh pr create \
+              --title "Codex: ${{ github.event.inputs.prompt }}" \
+              --body "## Codex On-Demand Task
+
+          **Prompt:** ${{ github.event.inputs.prompt }}
+          **Run:** ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+              --base main
+          else
+            echo "Codex completed but made no file changes"
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
